@@ -142,6 +142,10 @@ span {
 }
 
 /* Navbar end */
+.hide {
+    display: none;
+}
+
 .flex-container {
     display: flex;
 }

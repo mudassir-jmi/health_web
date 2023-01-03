@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-        <button onclick="toggleMenu()" 
-        class="burger material-symbols-outlined">menu
+        <button onclick="hide()" 
+        class="burger material-symbols-outlined" onclick="toggleMenu()">menu
         </button>
         <nav class="navbar">
             <div class="logo">
@@ -34,8 +34,7 @@
 
 <div class="flex-container find-doctor">
         <section class="flex-child">
-            <div class="container">
-            
+            <div class="container hide">
                 <h1 class="heading">get care</h1>
             
                 <div class="accordion-container">
@@ -193,6 +192,18 @@
 
         <script type="text/javascript">
         const toggleMenu = () => document.body.classList.toggle("open");
-        </script>
+        function hide () {
+           const hide = document.querySelector(".hide");
+           if(hide !=null) {
+            if(hide.style.display == "block") {
+                hide.style.display = 'none';
+            }else {
+                hide.style.display = 'block';
+            }
+            return false;
+           }
+        }
+
+        </script> 
 </body>
 </html>
